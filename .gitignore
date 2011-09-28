@@ -2,6 +2,7 @@
 *.suo
 #Visual Studio IntelliSense Database File
 *.sdf
+*.opensdf
 #Visual Studio Project Filters File
 *.vcxproj.filters
 #Visual Studio Project User Options file
