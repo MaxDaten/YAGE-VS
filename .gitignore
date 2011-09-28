@@ -1,0 +1,8 @@
+#Visual Studio Solution User Options
+*.suo
+#Visual Studio IntelliSense Database File
+*.sdf
+#Visual Studio Project Filters File
+*.vcxproj.filters
+#Visual Studio Project User Options file
+*.vcxproj.user
