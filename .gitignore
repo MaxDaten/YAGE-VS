@@ -1,9 +1,9 @@
-#Visual Studio Solution User Options
+# Visual Studio Solution User Options
 *.suo
-#Visual Studio IntelliSense Database File
+# Visual Studio IntelliSense Database File
 *.sdf
 *.opensdf
-#Visual Studio Project Filters File
-*.vcxproj.filters
-#Visual Studio Project User Options file
+# Visual Studio Project User Options file
 *.vcxproj.user
+# Ignore the .log files
+*.log
