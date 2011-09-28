@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="76915ea8-7d19-49aa-9871-ebe978607456" name="YAGEngine" linkedPackageId="6062a500-8502-499b-8837-cf84dd6f5332" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="2ec8e65f-a512-49aa-b023-395068b5c88a">
+      <elementDefinition Id="3c3cf0a4-9c1c-4166-aac0-2276e68c7865" />
+      <body>TypeInterface</body>
+      <annotatedElements>
+        <interfaceMoniker Id="3109e25b-a0b8-4a0f-845a-eada69d06154" LastKnownName="EventListener" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="92373269-d38d-43c6-97a2-61c2c9225cb5" name="WindowApplication" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ad3949c1-d9ef-4eb4-81bd-a6433808c763" />
+        <targetEnds>
+          <association Id="7c143398-49d4-4584-bea2-ad1cd16472a5" isDerived="false" sourceEndRoleName="WindowApplication" targetEndRoleName="Renderer" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="1ddc4422-6a57-4855-bcfc-ca41bc23d229" LastKnownName="Renderer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="760d42ab-99f0-41cf-9e71-56044e5b2dc8" name="WindowApplication" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ecd79332-984e-49be-bd86-98fd68849d69" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="abdb6119-318b-4529-8ab9-639dd21149bd" name="Renderer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="35bd25fc-f0bd-4d09-9ead-9fac05e2aa46" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e3f6c8b6-d195-4509-bfe2-4c90b774488f" />
+          </association>
+          <association Id="d9cb062a-b69a-4ce2-81b5-2b480bd61397" isDerived="false" sourceEndRoleName="WindowApplication" targetEndRoleName="EventHandler" isLeaf="false" isAbstract="false">
+            <classMoniker Id="4d0c636f-b769-492e-a31b-e29542094b36" LastKnownName="EventHandler" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="edb9628c-eeef-457d-94a1-9b53850c57b1" name="WindowApplication" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f96eca52-691e-4200-be02-788c2af3141c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2b587b01-f4ae-401e-8b2e-48c945c005b5" name="EventHandler" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="64d23bb2-396f-4c58-ba98-2fdf5093d90c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1adccd23-f0a2-45f6-a873-2bd5bbe49ad9" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="10e0c9ec-071b-42ab-a404-706b88399fd6" name="InputHandler" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8880577d-62df-4ec8-8c39-c1f12c105d6e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="add00600-c552-44f7-8f40-5e404b23319d" LastKnownName="EventHandler" />
+            </type_NamedElement>
+          </property>
+          <property Id="7b5f027a-da42-48ba-a2e2-ad87e440d03e" name="Renderer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="68539de8-498e-4e1b-9e7c-c3649121326a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d7f23364-e26a-4df4-9cd5-5f19d71bbd07" LastKnownName="Renderer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7272bd6e-2a04-4366-ac94-64766e53fe44" name="OGLRenderer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f813e782-b4ee-494f-b29e-a0b730d58cb9" />
+        <suppliersInternal>
+          <interfaceRealization Id="5bebd786-dac7-43ee-8c72-c2b19f8cc1d9">
+            <interfaceMoniker Id="1ddc4422-6a57-4855-bcfc-ca41bc23d229" LastKnownName="Renderer" />
+            <elementDefinition Id="62bc1c79-36bc-4297-86a6-e0780de3691a" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="991ce5d9-2774-4090-bfce-0ebaae6c1dc5" name="Render" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6fada4ed-094d-4e9d-9686-b52fd0d6336b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="21a53f30-1a5a-47f6-a41d-16e09fea43af" name="Visual" direction="In" isUnique="false">
+                  <elementDefinition Id="f65390d9-248f-4fee-9cf3-fb2ad16418a4" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="1ddc4422-6a57-4855-bcfc-ca41bc23d229" name="Renderer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="adabde8c-8912-4eac-93d6-aaff8882aab3" />
+        <ownedOperations>
+          <operation Id="10b424fd-c1b3-4ba5-8eaa-047812c0440e" name="Render" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="776c0378-ce96-457c-816c-fbb5ab8d70f2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c200f146-9038-4c35-863a-a71a57712ee1" name="Visual" direction="In" isUnique="false">
+                  <elementDefinition Id="383310bb-af1b-4e5e-aacf-f0eb9e181a20" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="3109e25b-a0b8-4a0f-845a-eada69d06154" name="EventListener" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eae10856-65ee-42c7-96f5-b6649f3a348a" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4d0c636f-b769-492e-a31b-e29542094b36" name="EventHandler" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1b2cc96b-db1a-4c00-af37-acbb5824c172" />
+        <targetEnds>
+          <association Id="a3726d4c-9356-419a-9ae1-325c67f06a7c" isDerived="false" sourceEndRoleName="EventHandler" targetEndRoleName="EventListener" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="3109e25b-a0b8-4a0f-845a-eada69d06154" LastKnownName="EventListener" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7f304f0c-7582-4c9d-8abb-fbb30832bc8b" name="EventHandler" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d15fbdfa-201b-44d8-831e-2af52d67c104" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="221438c4-f3a6-49b7-80af-d90fa46a564d" name="EventListener" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="bf600472-fa87-4345-9ca9-beec137ff169" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2ca6f495-2cd3-4e4d-9c57-74b979a653dc" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="c2f3c749-d2fe-4b9e-bb70-6041d1eca6a0" name="EventListener" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4ce29c36-2207-400a-86a5-407714bee901" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e90847af-2809-4675-920d-095f7e08fff9" LastKnownName="EventListener" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="add00600-c552-44f7-8f40-5e404b23319d" name="EventHandler" isAbstract="false" isLeaf="false" cachedFullName="EngineArchitecture::EventHandler">
+        <elementDefinition Id="1b2cc96b-db1a-4c00-af37-acbb5824c172" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e90847af-2809-4675-920d-095f7e08fff9" name="EventListener" isAbstract="false" isLeaf="false" cachedFullName="EngineArchitecture::EventListener">
+        <elementDefinition Id="eae10856-65ee-42c7-96f5-b6649f3a348a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d7f23364-e26a-4df4-9cd5-5f19d71bbd07" name="Renderer" isAbstract="false" isLeaf="false" cachedFullName="EngineArchitecture::Renderer">
+        <elementDefinition Id="adabde8c-8912-4eac-93d6-aaff8882aab3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="5f24e589-91f6-48dd-813c-6e2a10885535" name="WindowListener" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d0095d1a-fdc2-45e2-821d-c16873ac9823" />
+        <generalsInternal>
+          <generalization Id="f11245fc-9d76-48cf-973a-59ff127a30fb" isSubstitutable="false">
+            <interfaceMoniker Id="3109e25b-a0b8-4a0f-845a-eada69d06154" LastKnownName="EventListener" />
+            <elementDefinition Id="4fb8060a-1ba0-434d-89c2-6ef392ebcbe2" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="29d394fb-5225-4aaa-a56b-3316e9c035c7" name="InputListener" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3e4d99d3-0c91-4da5-b814-3d8a4befe01c" />
+        <generalsInternal>
+          <generalization Id="41f0e017-3325-46f0-8425-e7576aebb419" isSubstitutable="false">
+            <interfaceMoniker Id="75fe7781-ca13-48b9-be21-830ae6cf8e1c" LastKnownName="MouseListener" />
+            <elementDefinition Id="e2abb550-8e88-45ae-9049-e91740c05dd4" />
+          </generalization>
+          <generalization Id="650e8cb5-a69f-465e-9815-a2ea11a234dc" isSubstitutable="false">
+            <interfaceMoniker Id="64aa966e-7894-48ad-895d-5e10955b86a0" LastKnownName="KeyListener" />
+            <elementDefinition Id="3dfca9d4-416a-438e-a0c4-50c233e6e99b" />
+          </generalization>
+          <generalization Id="7d4fa193-d172-46d5-84e6-9d699df28a12" isSubstitutable="false">
+            <interfaceMoniker Id="3fdec80b-ae41-4d56-ae0f-d15e29b17dc4" LastKnownName="JoypadListener" />
+            <elementDefinition Id="ebeca2df-22fa-452f-bcb0-488754aa25a6" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="75fe7781-ca13-48b9-be21-830ae6cf8e1c" name="MouseListener" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a16cb46b-3a1a-4277-a13d-bcf1af4efdeb" />
+        <generalsInternal>
+          <generalization Id="7877ff8c-7802-4641-af46-988021d980e4" isSubstitutable="false">
+            <interfaceMoniker Id="3109e25b-a0b8-4a0f-845a-eada69d06154" LastKnownName="EventListener" />
+            <elementDefinition Id="4d97a32c-88b8-4801-8d27-0c0c38bfee67" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="64aa966e-7894-48ad-895d-5e10955b86a0" name="KeyListener" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f3be696-d83f-4cc8-a0a2-ebe867e03092" />
+        <generalsInternal>
+          <generalization Id="fce0edb2-a21c-43b7-a59e-ba82b48fbc44" isSubstitutable="false">
+            <interfaceMoniker Id="3109e25b-a0b8-4a0f-845a-eada69d06154" LastKnownName="EventListener" />
+            <elementDefinition Id="041d18eb-6143-4f3b-9730-12bae0258f34" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="3fdec80b-ae41-4d56-ae0f-d15e29b17dc4" name="JoypadListener" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ed49413c-5b70-4cc1-8b39-e2446e54a068" />
+        <generalsInternal>
+          <generalization Id="1b9a78ba-95bd-4b6f-88f0-dc91047671bd" isSubstitutable="false">
+            <interfaceMoniker Id="3109e25b-a0b8-4a0f-845a-eada69d06154" LastKnownName="EventListener" />
+            <elementDefinition Id="139eb507-bb34-42ad-9170-0f29aa8217de" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6062a500-8502-499b-8837-cf84dd6f5332" name="EngineArchitecture">
+    <elementDefinition Id="d2b03f62-0b72-43c2-a68a-cd9c72aa1282" />
+    <profileInstances>
+      <packageHasProfileInstances Id="eae1e03e-dceb-4e2f-b151-baa3e329e41d">
+        <profileInstance Id="8fdf6561-137d-4605-a46f-ea0d76b4bacd" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5c4d59d0-1bb1-413f-a248-c21e9faffd09">
+        <profileInstance Id="b160907d-30a8-4c78-9483-f4304554dbb3" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
